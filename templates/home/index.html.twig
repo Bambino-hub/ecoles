@@ -1,20 +1,29 @@
-{% extends 'base.html.twig' %}
+{% extends 'base.html.twig' %} {% block title %}Accueille!{% endblock %} {%
+block body %}
+<section class="banner">
+  <div class="container">
+    <h1 class="d-flex justify-content-center name">STELLA SCIENTIA</h1>
 
-{% block title %}Hello HomeController!{% endblock %}
+    <p class="citation">
+      << Rien dans la vie n'est à craindre. tout est à comprendre.>> Marie
+      Curie.
+    </p>
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <p>
+      pour une ascension scolaire brillante dans vos classes,optez pour le
+      groupe STELLA SCIENTIA
+    </p>
+    <h3>Nous mettons avotre disposition:</h3>
+    <p>
+      -Des répétitions à docmicile dans toutes les classes et toutes séries
+      (6eme en Tle) <br />
+      -Une assistance pour faciliter votre réussite briante en Maths, PC et SVT
+      <br />
+      -Un encadrement de qualité et adapté pour assurer vos devoirs et examens
+      tout au long de l'année
+    </p>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/home/bambino/ecole/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>/home/bambino/ecole/templates/home/index.html.twig</code></li>
-    </ul>
-</div>
-{% endblock %}
+    <p>Pour continuer veillez vous inscrire ou vous connecter</p>
+  </div>
+</section>
+{% include "partiales/footer.html.twig" %} {% endblock %}

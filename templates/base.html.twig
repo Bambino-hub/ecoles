@@ -25,6 +25,8 @@
     {% endblock %}
   </head>
   <body>
+    {% include "partiales/navbar.html.twig" %}
+    <div class="container">{% include "partiales/flash.html.twig" %}</div>
     {% block body %}{% endblock %}
   </body>
 </html>
